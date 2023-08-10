@@ -1,0 +1,360 @@
+/* default css start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #d2d2d2;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-area {
+  background-color: red;
+}
+
+/* default css end */
+
+
+/* navbar regular css start */
+.navbar-area {
+  background: rgba(0, 0, 0, .6);
+  border-bottom: 1px solid #000;
+}
+
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.site-navbar ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-navbar ul li a:hover {
+  background: rgba(255, 255, 255, .1);
+}
+
+/* navbar regular css end */
+
+
+/* nav-toggler css start */
+.nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: .3s;
+}
+
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+/* nav-toggler css start */
+
+
+
+
+/* mobile breakpoint start */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 720px;
+  }
+
+  /* navbar css for mobile start */
+  .nav-toggler {
+    display: block;
+  }
+
+  .site-navbar {
+    min-height: 60px;
+  }
+
+  .site-navbar ul {
+     z-index: 9999; /* brining the page upward  */
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #444;
+    background-color: rgba(255, 0, 0, 0.5);
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+
+  .site-navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, .1);
+  }
+
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+
+  /* navbar css for mobile end */
+}
+
+/* mobile breakpoint end */
+
+
+
+/* search bar starts  */
+
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: red;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+}
+
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* close button shown when typing */
+input:not(:placeholder-shown)~.reset {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+
+/* search bar ends  */
+
+
+
+
+
+/* main starts  */
+
+
+/* main ends  */
+
+
+
+/* first starts  */
+
+.admin-name{
+text-align: center;
+margin: 2rem auto;
+}
+
+.name h1{
+  color:rgb(0, 64, 255) ;
+}
+
+.name h1 span{
+  color: black;
+}
+
+
+.dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-direction: column;
+}
+
+.dash .first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.dash .first .main {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  width: 20rem;
+  height: 15rem;
+  background-color: rgb(226, 96, 96);
+  border-radius: 2rem ;
+}
+
+.dash .main img {
+  width: 50%;
+}
+
+.dash .main a{
+  text-decoration: none;
+  color: black;
+}
+
+.dash .main a:hover{
+text-decoration: underline;
+}
+
+.dash .main h2{
+  font-size: 2rem;
+}
+
+.dash .main h3 {
+  font-size: 1.8rem;
+}
+
+
+.main:last-child {
+  text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  .dash .first {
+    flex-direction: column;
+  }
+
+
+}
+
+/* first ends  */

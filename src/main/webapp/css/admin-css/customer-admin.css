@@ -1,0 +1,53 @@
+
+
+img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+/* for the customer table headeading seperation color  */
+
+table .customer {
+    font-size: 2rem;
+    padding: 0 3.5rem;
+    background-color: green;
+}
+
+.customer-head{
+    text-align: center;
+margin: 2rem auto;
+}
+
+
+/* for the customer table headeading seperation color  */
+
+table .admin {
+    font-size: 2rem;
+    padding: 0 3.5rem;
+    background-color: red;
+
+}
+
+
+.admin-head{
+    text-align: center;
+margin: 2rem auto;
+}
+
+
+.user-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for the last column */
+td:last-child {
+    text-align: center;
+}

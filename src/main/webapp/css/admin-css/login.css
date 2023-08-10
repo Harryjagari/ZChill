@@ -1,0 +1,57 @@
+body{
+    background: radial-gradient(circle, #fd6868 10%, transparent 11%);
+    background-size: 2em 2em;
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.login-admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.login{
+	background: red;
+	padding:3rem;
+    border-radius: 2rem;
+}
+
+.login h2{
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	border-bottom: 1px solid;
+}
+
+form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.text{
+	width: 100%;
+	color: #fff;
+	border: 0.1rem solid red;
+	background: black;
+	font-size: 1rem;
+	padding: 1rem 1rem;
+	font-weight: bold;
+	margin: 1.5rem auto;
+}
+
+.btn{
+	border: none;
+	width: 100%;
+	height: 3rem;
+	font-size: 1.5rem;
+	background: black;
+	color: white;
+	font-weight: bold;
+    border-radius: 2rem;
+	margin: 1.5rem auto;
+	cursor: pointer;
+}

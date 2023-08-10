@@ -1,0 +1,129 @@
+img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+/* main product div  */
+
+/* sotring starts */
+.product-wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/* sotring ends */
+
+
+/* product heading stats */
+.product-heading {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    opacity: 0.9;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+/* product heading ends */
+
+
+
+/* managing the products  */
+.product-grid {
+    margin-bottom: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* for the each item div starts  */
+
+.p-all{
+	display:flex;
+  align-items: center;
+	justify-content:center;
+	gap:2rem;
+	flex-wrap:wrap;
+}
+.product-item {
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:13rem;
+
+}
+
+
+.product-item .product-img-slider {
+    display: flex;
+
+}
+
+.product-item .product-img-slider img {
+    min-width: 100%;
+}
+
+
+
+
+/* product info start */
+.product-info {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.product-item .product-info .product-name {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.product-item .product-info .product-price {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.product-item .product-info .btn-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-item .product-info .product-category {
+    margin-top: 1rem;
+    width: 4rem;
+    height: 2rem;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+}
+
+
+.product-item .product-info .product-name a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* product info ends */
+
+
+@media screen and (min-width: 576px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

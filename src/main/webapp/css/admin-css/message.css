@@ -1,0 +1,40 @@
+
+
+img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+/* for the customer table headeading seperation color  */
+
+table .message {
+    font-size: 2rem;
+    padding: 0 3.5rem;
+    background-color: rgb(223, 87, 207);
+}
+
+.message-head{
+    text-align: center;
+margin: 2rem auto;
+}
+
+
+
+
+.message-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Style for the second-last column image */
+td:nth-last-child(2) {
+    text-align: center;
+}

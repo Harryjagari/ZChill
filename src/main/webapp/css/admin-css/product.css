@@ -1,0 +1,113 @@
+/* adding product main starts  */
+
+
+.add-products form {
+  margin: 0 auto;
+  max-width: 50rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.add-products form h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+
+.add-products form .box {
+  background-color: #F0F1F8;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  padding: 1.4rem;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  border-radius: .5rem;
+  margin: 0.5rem 0;
+}
+
+
+.add-products form input[type="submit"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  background: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-products form input[type="submit"]:hover {
+  background: red;
+  color: black;
+}
+
+
+
+/* show  */
+
+
+
+img {
+  width: 5rem;
+margin: 0 1.5rem;
+}
+
+/* for the product display table heading seperation color  */
+
+table .product {
+  font-size: 1.2rem;
+  background-color: rgb(227, 65, 65);
+}
+
+
+
+
+.user-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for the last column */
+td:last-child {
+  text-align: center;
+}
+
+.img-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.user-table table tr td button {
+
+  background: none;
+  border: none;
+  margin: 0 2rem;
+}
+
+.user-table table tr td button a {
+
+  display: flex;
+  margin: 1rem 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(255, 0, 0);
+  font-size: 1rem;
+}

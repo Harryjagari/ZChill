@@ -1,0 +1,31 @@
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order table{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.order table tr{
+    text-align: center;
+}
+
+.order table tr .heading{
+    font-size: 1.5rem;
+}
+.order table tr td{
+    padding: 2rem;
+}
+
+select{
+    width: 50%;
+    border: 0.1rem solid red ;
+}
+
+option:hover{
+    background: rgb(131, 20, 20);
+}
+
